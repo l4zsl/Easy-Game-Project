@@ -1,46 +1,81 @@
 # 🎮 Easy Game Project
 
-โปรเจกต์พัฒนาเกมด้วยภาษา **Python** ที่เน้นกลไกการควบคุมที่ลื่นไหลและการเก็บสถิติผู้เล่น เหมาะสำหรับเป็นตัวอย่างการประยุกต์ใช้โครงสร้างข้อมูลและการเขียนโปรแกรมเชิงวัตถุ (OOP)
+A simple 2D survival game built with **Python and Tkinter**. Dodge incoming obstacles, manage your health, and survive as long as possible to beat your personal high score.
 
----
+## ✨ Features
 
-## 🚀 ฟีเจอร์เด่นของเกม (Key Features)
-* **Smooth Movement & Sprint:** ระบบควบคุมตัวละครที่ตอบสนองอย่างลื่นไหล พร้อมฟังก์ชันการวิ่งเร็ว (Sprint) 
-* **High Score System:** ระบบบันทึกคะแนนสูงสุดของผู้เล่นลงในรูปแบบไฟล์ JSON (`highscore.json`) ทำให้ข้อมูลไม่หายไปแม้จะปิดเกม
+- **Player Movement** — Move freely around the game area using keyboard controls.
+- **Sprint System** — Hold Shift to move faster.
+- **Dynamic Obstacles** — Survive two alternating obstacle patterns:
+  - 🔴 **Rain** — Incoming projectiles approach from different directions.
+  - ▰ **Moving Barriers** — Horizontal obstacles move downward with shifting gaps.
+- **Health System** — Start with 100 HP. Each collision reduces health by 20.
+- **Survival Timer** — Track how long you can stay alive.
+- **High Score System** — Automatically saves your best survival time using JSON, so your record persists between sessions.
+- **Replay System** — Start another round immediately after Game Over.
 
----
+## 🕹️ Controls
 
-## 🕹️ วิธีการควบคุม (Controls)
-* **W / A / S / D** : เคลื่อนที่ (Move)
-* **Hold Shift** : วิ่งเร็ว (Sprint)
+| Key | Action |
+|:---:|---|
+| `W` / `↑` | Move Up |
+| `A` / `←` | Move Left |
+| `S` / `↓` | Move Down |
+| `D` / `→` | Move Right |
+| `Shift` | Sprint |
 
----
+## 🛠️ Built With
 
-## 🛠️ เทคโนโลยีที่ใช้ (Tech Stack)
-* **Language:** Python 3.x
-* **Libraries:** [พิมพ์ชื่อ Library ที่ใช้ เช่น Pygame / Ursina / Arcade]
-* **Data Storage:** JSON (สำหรับระบบ High Score)
+- **Language:** Python 3.10+
+- **GUI Framework:** Tkinter
+- **Data Storage:** JSON
+- **Standard Libraries:**
+  - `random` — Random obstacle generation
+  - `time` — Survival time tracking
+  - `json` — High score storage
+  - `pathlib` — File path management
 
----
+No additional third-party packages are required.
 
-## 📦 วิธีการติดตั้งและรันโปรเจกต์ (Installation & Setup)
+## 🚀 Installation & Setup
 
-1. **ดาวน์โหลดโปรเจกต์ หรือ Clone Repository:**
-   
-bash
-   git clone https://github.com
-   
+### 1. Clone the repository
 
-2. **เริ่มรันเกม:**
-   
-bash
-   python main.py
-   
+```bash
+git clone https://github.com/l4zsl/Easy-Game-Project.git
+```
 
+### 2. Navigate to the project directory
 
----
+```bash
+cd Easy-Game-Project
+```
 
-## 📷 ภาพตัวอย่างภายในเกม (Screenshots)
-(แนะนำให้แคปภาพหน้าจอเกมของคุณ แล้วนำมาอัปโหลดใส่ตรงนี้ เพื่อให้กรรมการเห็นภาพทันทีโดยไม่ต้องกดรันโค้ด)
+### 3. Run the game
 
-💡 **ผู้พัฒนา:** [กณวรรธน์ แมทต้า]
+```bash
+python main.py
+```
+
+## 📁 Project Structure
+
+```text
+Easy-Game-Project/
+├── main.py         # Main game implementation
+├── highscore.json  # Persistent high score data
+└── README.md       # Project documentation
+```
+
+`highscore.json` stores your best survival time and is created or updated automatically.
+
+## 🎯 Objective
+
+Survive for as long as possible while avoiding incoming obstacles. Every collision costs 20 HP, and the game ends when your health reaches zero.
+
+**How long can you survive?**
+
+## 👨‍💻 Developer
+
+**กณวรรธน์ แมทต้า**
+
+GitHub: [@l4zsl](https://github.com/l4zsl)
