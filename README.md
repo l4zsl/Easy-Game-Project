@@ -1,17 +1,56 @@
-# Welcome!
-## -  WASD to move, Shift to sprint
+# 🎮 Easy Game Project
 
-<!--
-**l4zsl/l4zsl** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+โปรเจกต์พัฒนาเกมด้วยภาษา **Python** ที่เน้นกลไกการควบคุมที่ลื่นไหลและการเก็บสถิติผู้เล่น เหมาะสำหรับเป็นตัวอย่างการประยุกต์ใช้โครงสร้างข้อมูลและการเขียนโปรแกรมเชิงวัตถุ (OOP)
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 ฟีเจอร์เด่นของเกม (Key Features)
+* **Smooth Movement & Sprint:** ระบบควบคุมตัวละครที่ตอบสนองอย่างลื่นไหล พร้อมฟังก์ชันการวิ่งเร็ว (Sprint) 
+* **High Score System:** ระบบบันทึกคะแนนสูงสุดของผู้เล่นลงในรูปแบบไฟล์ JSON (`highscore.json`) ทำให้ข้อมูลไม่หายไปแม้จะปิดเกม
+* **[พิมพ์เพิ่ม เช่น: ระบบสุ่มศัตรู / ฉากพื้นหลังที่เปลี่ยนตามคะแนน / Sound Effect]**
+
+---
+
+## 🕹️ วิธีการควบคุม (Controls)
+* **W / A / S / D** : เคลื่อนที่ (Move)
+* **Hold Shift** : วิ่งเร็ว (Sprint)
+* **[พิมพ์เพิ่ม เช่น: Spacebar เพื่อกระโดดหรือโจมตี]**
+
+---
+
+## 🛠️ เทคโนโลยีที่ใช้ (Tech Stack)
+* **Language:** Python 3.x
+* **Libraries:** [พิมพ์ชื่อ Library ที่ใช้ เช่น Pygame / Ursina / Arcade]
+* **Data Storage:** JSON (สำหรับระบบ High Score)
+
+---
+
+## 📦 วิธีการติดตั้งและรันโปรเจกต์ (Installation & Setup)
+
+1. **ดาวน์โหลดโปรเจกต์ หรือ Clone Repository:**
+   
+bash
+   git clone https://github.com
+   
+
+
+2. **ติดตั้ง Library ที่จำเป็น (หากมี):**
+   
+bash
+   pip install [ชื่อ library เช่น pygame]
+   
+
+
+3. **เริ่มรันเกม:**
+   
+bash
+   python main.py
+   
+
+
+---
+
+## 📷 ภาพตัวอย่างภายในเกม (Screenshots)
+(แนะนำให้แคปภาพหน้าจอเกมของคุณ แล้วนำมาอัปโหลดใส่ตรงนี้ เพื่อให้กรรมการเห็นภาพทันทีโดยไม่ต้องกดรันโค้ด)
+
+💡 **ผู้พัฒนา:** [กณวรรธน์ แมทต้า]
